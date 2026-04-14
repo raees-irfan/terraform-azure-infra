@@ -63,4 +63,30 @@ Resources managed in this project:
 \## 📁 Project Structure
 
 
+---
+
+## 🔐 Security Best Practices
+
+- No secrets stored in code
+- `.tfvars` files excluded via `.gitignore`
+- Supports Azure Key Vault integration
+
+---
+
+## 🔄 Brownfield Approach
+
+This project demonstrates how to:
+
+- Import existing Azure resources into Terraform
+- Align Terraform state with live infrastructure
+- Avoid resource recreation (critical in production)
+
+---
+
+## 🚀 How to Use
+
+### 1. Clone repo
+```bash
+git clone https://github.com/raees-irfan/terraform-azure-infra.git
+cd terraform-azure-infra/environments/nonprod
 
