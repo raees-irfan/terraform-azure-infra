@@ -45,3 +45,12 @@ module "vm" {
   location = module.rg.location
   nic_id = var.nic_id
 }
+
+module "appservice" {
+  source = "../modules/appservice"
+  app_service_plan_name = var.app_service_plan_name
+  app_name = var.app_name
+  location = module.rg.location
+  resource_group_name = module.rg.name
+  sku_name = var.sku_name
+}
